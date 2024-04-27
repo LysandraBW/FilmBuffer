@@ -1,9 +1,10 @@
 **FilmBuffer**
 **CIS4301**
+
 I created the UI and integrated the back and front-ends. As this requires the database the team created, a lot of the functionality would not work on your end. So, I will provide screenshots of how the page looks like with full functionality, and how the page looks like with limited functionality. You could access the page that has limited functionality (/query/0).
 
 **Limited Functionality:** 
-The data is random. The images are loaded via TMDB.
+The data is random. The images are loaded via TMDB. If you want the images to load as well, you'll need to insert an API key.
 ![Screenshot 2024-04-27 180515](https://github.com/LysandraBW/FilmBuffer/assets/81883243/4688fb49-01d8-4cec-888c-ad280017ee6d)
 ![Screenshot 2024-04-27 183500](https://github.com/LysandraBW/FilmBuffer/assets/81883243/a81aef40-0f9e-47cf-8c34-5b31a5ba9afe)
 ![Screenshot 2024-04-27 183528](https://github.com/LysandraBW/FilmBuffer/assets/81883243/e193fa96-f3da-4ea8-9ca0-6a3de69a487c)
