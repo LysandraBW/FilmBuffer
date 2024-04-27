@@ -14,6 +14,10 @@ We compute the trends from the database, the images are still loaded via TMDB. T
 ![image](https://github.com/LysandraBW/FilmBuffer/assets/81883243/dc7e63da-6505-4212-ac90-9e85090284bc)
 ![image](https://github.com/LysandraBW/FilmBuffer/assets/81883243/bd633ac9-956b-4401-981a-b300e517d45a)
 ![image](https://github.com/LysandraBW/FilmBuffer/assets/81883243/c7b377d9-42fa-4d05-b0a5-5eb164d6db7d)
+![image](https://github.com/LysandraBW/FilmBuffer/assets/81883243/d7de1205-52f8-48f3-a6f1-1d499407d467)
 
-I did not take as many pictures as I should have, but the full functionality was there! Even if it were for a mere second. I had fun working with my teammates, they were all great people. I'm not sure what I should put in a README.md. Definitely learned a lot. Don't judge any rushed code.
+I did not take as many pictures as I should have, but the full functionality was there! Even if it were for a mere second. I had fun working with my teammates, they were all great people. I'm not sure what I should put in a README.md. Definitely learned a lot. Please keep in mind that a lot of this code was rushed. Goodbye!
+
+![image](https://github.com/LysandraBW/FilmBuffer/assets/81883243/7dbfb413-b265-4c19-8ba7-a467ff754836)
+
 
