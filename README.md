@@ -26,17 +26,15 @@ The trends are computed from the data in the DB. You can see the trends in the p
 
 **Videos**
 
-
 https://github.com/LysandraBW/FilmBuffer/assets/81883243/8844c476-ffed-4d7c-9ad9-39b69c1db3cc
 
+https://github.com/LysandraBW/FilmBuffer/assets/81883243/2e4b1e9f-7f98-4996-9364-6b59384919aa
 
+https://github.com/LysandraBW/FilmBuffer/assets/81883243/2d4fdf8f-4d43-45b3-81ae-1b5d6f590c23
 
 https://github.com/LysandraBW/FilmBuffer/assets/81883243/ffda48ad-1866-4224-a7b4-c77b777e6cc2
 
-
 https://github.com/LysandraBW/FilmBuffer/assets/81883243/08eb51f1-2a26-4ea1-a6b6-36ecb28fd6a1
-
-
 
 **Summary**
 
