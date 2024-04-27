@@ -1,0 +1,73 @@
+/* Container */
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto;
+    border: var(--input-border);
+    border-radius: var(--input-border-radius);   
+    box-shadow: var(--l-box-shadow);
+    transition: 0.25s;
+}
+
+.container > * {
+    padding: var(--input-padding);
+}
+
+/* Label */
+
+.container > span {
+    display: block;
+    border-radius: var(--input-border-radius) 0px 0px var(--input-border-radius);
+    background-color: transparent;
+    font-weight: 400;
+    color: var(--input-color);
+    transition: 0.25s;
+    text-align: center;
+    width: max-content;
+}
+
+/* Text Input */
+
+.textInput {
+    border: none;
+    border-left: var(--border);
+    border-radius: 0px var(--border-radius) var(--border-radius) 0px;
+    background: transparent;
+    width: 100%;
+    /* width: -webkit-fill-available; */
+    transition: 0.25s;
+}
+
+.textInput::placeholder {
+    color: inherit;
+}
+
+/* Focus */ 
+
+.textInput:focus {
+    outline: none;
+    color: var(--accent);
+    border-color: var(--accent);
+}
+
+.container:has(.textInput:focus) {
+    border: 1px solid var(--accent);
+}
+
+.container:has(.textInput:focus) * {
+    color:  var(--accent);
+}
+
+/* Hover */
+
+/* 
+.container:hover, .container:hover .textInput {
+    border-color: var(--accent);
+    transition: 0.25s;
+}
+
+.container:hover span {
+    color: var(--accent);
+    transition: 0.25s;
+} 
+*/

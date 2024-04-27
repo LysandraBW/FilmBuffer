@@ -1,0 +1,72 @@
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: calc(var(--v-body-padding)/2) var(--h-body-padding);
+    position: relative;
+}
+
+.icon {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.linkContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.linkContainer a {
+    text-decoration: none;
+	font-weight: 500;
+	transition: 0.25s;
+}
+
+.linkContainer a:hover {
+	color: var(--accent);
+	transition: 0.15s;
+}
+
+/* Themed Navigation */
+
+.nav * {
+    color: var(--text-l1);
+}
+
+.nav.dark {
+    background: transparent;
+    filter: drop-shadow(1px 1px 1px 1px #FFFFFF);
+}
+
+.nav.dark:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-image: linear-gradient(
+		90deg,
+		hsl(0deg 0% 10%) 0%,
+		hsl(344deg 0% 19%) 22%,
+		hsl(344deg 0% 30%) 38%,
+		hsl(344deg 0% 41%) 49%,
+		hsl(344deg 0% 52%) 58%,
+		hsl(0deg 0% 64%) 66%,
+		hsl(344deg 0% 53%) 72%,
+		hsl(344deg 0% 42%) 79%,
+		hsl(344deg 0% 32%) 85%,
+		hsl(344deg 0% 22%) 92%,
+		hsl(0deg 0% 13%) 100%
+	);
+}
+
+.nav.dark * {
+    color: var(--text-d1);
+}

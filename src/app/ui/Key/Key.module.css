@@ -1,0 +1,49 @@
+.container {
+    height: fit-content;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    box-shadow: var(--l-box-shadow);
+}
+
+.container h5 {
+    padding: 10px;
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-l1);
+    border-bottom: var(--border);
+}
+
+.container p {
+    color: var(--input-color);
+}
+
+.keyContainer {
+    padding: 10px;
+    display: grid;
+    grid-row-gap: 10px;
+    row-gap: 10px;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-auto-flow: column;
+}
+
+.keyContainer:not(:has(.keyLabel)) {
+    display: block;
+}
+
+.keyLabel {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.keyLabel span {
+    display: block;
+    width: 20px;
+    height: 10px;
+}
+
+.keyLabel label {
+    font-size: 11px;
+    color: var(--input-color);
+}

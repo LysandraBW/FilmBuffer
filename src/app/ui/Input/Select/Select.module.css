@@ -1,0 +1,67 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    border: var(--input-border);
+    border-radius: var(--input-border-radius);
+    box-shadow: var(--l-box-shadow);
+    transition: 0.25s;
+}
+
+.container > * {
+    padding: var(--input-padding);
+}
+
+.container * {
+    color: var(--input-color);
+}
+
+.container select {
+    outline: none;
+    border: none;
+    border-right: var(--input-border);
+    border-radius: var(--input-l-border-radius);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: -webkit-fill-available;
+}
+
+/* 
+.container:hover {
+    border-color: var(--accent);
+    transition: 0.25s;
+}
+
+.container:hover .select {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.container:hover .customDropdown * {
+    color: var(--accent);
+} 
+*/
+
+.container:has(.select:focus), .select:focus {
+    border-color: var(--accent);
+    color: var(--accent);
+    transition: 0.25s;
+}
+
+.select:focus + .customDropdown * {
+    color: var(--accent);
+    transition: 0.25s;
+}
+
+.customDropdown {
+    display: block;
+    border-radius: var(--input-r-border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.customDropdown svg {
+    width: 12px;
+    height: 12px;
+    transition: 0.25s;
+}

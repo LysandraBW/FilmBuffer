@@ -1,0 +1,61 @@
+/* Source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_checkbox */
+
+.checkboxContainer label {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    position: relative;
+}
+
+.checkbox {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    height: 0;
+    width: 0;   
+}
+
+.customCheckbox {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border: var(--input-border);
+}
+
+.checkboxContainer .checkboxLabel {
+    position: relative;
+    left: 20px;
+    color: var(--input-color);
+}
+
+.customCheckbox:hover {
+    background-color: #cccccc5c;
+}
+
+.customCheckbox:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+input:checked + .customCheckbox {
+    background-color: var(--accent);
+    border: none;
+}
+
+input:checked + .customCheckbox:after {
+    display: block;
+    left: 5px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 1px 1px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}

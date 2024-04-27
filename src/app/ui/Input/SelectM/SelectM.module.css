@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.selectionLabel {
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+    width: fit-content;
+    padding: 3px 7px;
+    border-radius: var(--input-border-radius);
+    background: #3A8AFB29;
+    position: relative;
+}
+
+.selectionLabel label {
+    color: var(--accent);
+    font-weight: 500;
+}
+
+.selectionLabel svg {
+    width: 9px;
+    height: 9px;
+    color: var(--accent);
+    position: relative;
+    top: 1px;
+    cursor: pointer;
+}

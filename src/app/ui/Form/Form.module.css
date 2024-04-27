@@ -1,0 +1,35 @@
+.container {
+    border-right: var(--border);
+    height: 100%;
+}
+
+.container h1 {
+    /* padding: calc(var(--v-body-padding)/2) var(--h-body-padding); */
+
+    padding: calc(var(--v-body-padding)/2) var(--h-body-padding) 0 var(--h-body-padding);
+    white-space: nowrap;
+    font-size: 15px;
+    font-weight: 600;
+    /* color: #a6a6a6; */
+}
+
+.inputGroups {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    padding: calc(var(--h-body-padding)/2) var(--h-body-padding);
+    width: 300px;
+}
+
+.inputGroups > .inputGroup {
+    border-bottom: var(--border);
+}
+
+.inputGroup button {
+    cursor: pointer;
+}

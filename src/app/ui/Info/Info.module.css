@@ -1,0 +1,39 @@
+.container {
+    /* flex-grow: 1; */
+    min-width: 0;
+    width: -webkit-fill-available;
+}
+
+.container h1 {
+    /* margin-bottom: 10px; */
+    font-size: 15px;
+    font-weight: 600;
+    padding: calc(var(--v-body-padding)/2) var(--h-body-padding) 0 var(--h-body-padding);
+    /* border-bottom: var(--input-border);
+    border-bottom-style: dashed; */
+    /* color: #a6a6a6; */
+}
+
+.grid {
+    display: flex;
+    column-gap: var(--h-body-padding);
+    padding: calc(var(--v-body-padding)/2) var(--h-body-padding);
+}
+
+.chartKey {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    /* width: -webkit-fill-available; */
+    flex: 1;
+    min-width: 0;
+}
+
+.chartKey > :first-child {
+    aspect-ratio: 2 / 1;
+}
+
+.chartKey canvas {
+    width: 100% !important;
+    height: 100% !important;
+}

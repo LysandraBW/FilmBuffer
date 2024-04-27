@@ -1,0 +1,40 @@
+.container {
+    padding: 0px;
+    height: fit-content;
+    
+    border-radius: var(--border-radius);
+    box-shadow: var(--l-box-shadow);
+}
+
+.container .header {
+    display: block;
+    border: var(--border);
+    border-bottom-color: rgba(128, 128, 128, 0.038);
+    border-radius: 4px 4px 0px 0px;
+    padding: 10px;
+}
+
+.container .header h5 {
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.container .header span {
+    display: block;
+    opacity: 0.6;
+    font-weight: 500;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.canvasContainer {
+    border: var(--border);
+    border-top: none;
+    padding: 10px;
+    border-radius: 0px 0px 4px 4px;
+    /* width: 100%; */
+}

@@ -1,0 +1,75 @@
+.searchContainer {
+    position: relative;
+}
+
+.search {
+    padding: var(--input-padding);
+    border: var(--input-border);
+    border-radius: var(--input-border-radius);
+    width: -webkit-fill-available;
+    outline: none;
+    color: var(--input-color);
+    transition: 0.2s;
+    width: 241px;
+    box-shadow: var(--l-box-shadow);
+}
+
+.search:focus {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.search:focus:has(+ .searchResults .searchResult) {
+    border-radius: var(--input-border-radius) var(--input-border-radius) 0 0;
+    transition: 0.2s;
+}
+
+.searchResults {
+    position: absolute;
+    left: 0;
+    min-width: 222px;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    border: var(--input-border);
+    border-top: none;
+    border-radius: 0px 0px var(--input-border-radius) var(--input-border-radius);
+    height: auto;
+    transition: 0.2s;
+    background: white !important;
+    box-shadow: var(--l-box-shadow);
+}
+
+.searchResults:not(:has(.searchResult)) {
+    display: none;
+}
+
+.searchResult:hover {
+    background: rgba(230, 230, 230, 0.264);
+    cursor: pointer;
+}
+
+.searchResult {
+    background: white;
+    width: 100%;
+}
+
+.searchResults > .searchResult:not(:last-child) {
+    border-bottom: var(--input-border);
+}
+
+.searchResults > .searchResult:last-child {
+    border-radius: 0px 0px var(--input-border-radius) var(--input-border-radius);
+}
+
+.searchResult {
+    padding: var(--input-padding);
+    width: 239px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 5px;
+}

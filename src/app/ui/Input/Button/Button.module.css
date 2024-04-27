@@ -1,0 +1,17 @@
+.button {
+    padding: var(--input-padding);
+    width: 100%;
+    border: 1px solid var(--accent);
+    border-radius: var(--input-border-radius);
+    color: var(--accent);
+    font-weight: 400;
+    font-size: 12px;
+    background: none;
+    transition: 0.15s;
+}
+
+.button:hover {
+    background: var(--accent);
+    color: white;
+    transition: 0.15s;
+}

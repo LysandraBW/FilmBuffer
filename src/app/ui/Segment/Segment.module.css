@@ -1,0 +1,208 @@
+/* Contains .page and .bookmark */
+.segment {
+    display: grid;
+    grid-template-columns: auto min-content;
+    width: max-content;
+}
+
+/* Introductive Section */
+.segment:first-child > div.page {
+    /* Only contains one section, so it doesn't need a grid. */
+    display: flex;
+}
+
+/* Informative Sections */
+.segment:not(:first-child) > div.page {
+    /* The other segments contain two sections. */
+    display: grid;
+    grid-template-columns: 600px 1fr;
+    column-gap: 15px;
+}
+ 
+.page {
+    /* Contains the image and text. */
+    /* We don't want to see any overflowing content. */
+    overflow: hidden;
+    width: max-content;
+}
+
+/* Text */
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--h-body-padding);
+    height: 100%;
+}
+
+.text > div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 325px;
+}
+
+.text h1 {
+    font-size: 30px;
+    background: linear-gradient(
+        90deg,
+        hsl(215deg 96% 61%) 0%,
+        hsl(215deg 100% 49%) 48%,
+        hsl(224deg 100% 48%) 100%
+      );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.text span {
+    display: block;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--accent);
+    width: min-content;
+    padding: 3px 5px;
+    border-radius: 3px;
+    border: 1px solid var(--accent);
+    white-space: nowrap;
+}
+
+.segment:first-child .text span {
+    /* There is no span element for the introduction-page. */
+    display: none;
+}
+
+.text p {
+    width: 325px;
+    line-height: 1.3;
+    font-weight: 500;
+    color: var(--text-d2);
+}
+
+.text .button {
+    border: 1px solid rgba(255, 255, 255, 0.575);
+    background: none;
+    padding: 7px 14px;
+    border-radius: 3px;
+    transition: 0.35s;
+    width: fit-content;
+}
+
+.text a {
+    color: var(--text-d1);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Hover Effect */
+
+.text .button:hover {
+    transition: 0.25s;
+    border-color: var(--accent);
+}
+
+.text:has(.button:hover) a {
+    color: var(--accent);
+}
+
+/* Image */
+
+.image {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.image::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-backdrop-filter: blur(15px) saturate(1);
+    backdrop-filter: blur(30px) saturate(1);
+}
+
+
+.segment:nth-child(2) .image::after, .segment:nth-child(3) .image::after {
+    /* Tweaking Saturation */
+    -webkit-backdrop-filter: blur(15px) saturate(3);
+    backdrop-filter: blur(30px) saturate(3);
+}
+
+.imgContainer {
+    flex-grow: 1;
+    height: 500px;
+}
+
+.imgContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 3;
+}
+
+/* Bookmark (Toggles Pages) */
+
+.bookmark {
+    padding: 8px 9px 8px 8px;
+    display: flex;
+    justify-content: center;
+    border-left: 1px solid rgba(69, 69, 69, 0.312);
+    transition: 0.35s;
+}
+
+.bookmark svg {
+    width: 15px;
+    height: 15px;
+}
+
+.bookmark * {
+    color: rgba(255, 255, 255, 0.25);
+}
+
+.bookmark:hover {
+    cursor: pointer;
+}
+
+.bookmark:hover * {
+    color: var(--accent);
+    transition: 0.25s;
+}
+
+.segment:nth-child(even) .bookmark:hover * {
+    color: var(--darker-accent) !important;
+}
+
+.open .bookmark svg {
+    /* Has a weird look when it's in the transition. */
+    display: none;
+}
+
+/* Borders */
+
+.segment:not(:has(+ .segment)) .bookmark {
+    border-right: 1px solid rgba(69, 69, 69, 0.312);
+}
+
+.open .page {
+    border-left: 1px solid rgba(69, 69, 69, 0.312);    
+}
+
+.open .bookmark {
+    border-left: none;
+}
+
+.segment:first-child .page, .segment:first-child .bookmark {
+    border-left: none;
+}

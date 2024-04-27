@@ -1,0 +1,74 @@
+:root {
+    --lite-bg: #FFFFFF;
+    --dark-bg: #000000;
+    --mdrk-bg: #222222;
+
+    --input-bg1: #FFFFFF;
+    --input-bg2: #DDDDDD;
+
+    --text-l1: #000000;
+    --text-l2: #222222;
+    --text-l3: #444444;
+
+    --text-d1: #FFFFFF;
+    --text-d2: #DDDDDD;
+    --text-d3: #BBBBBB;
+
+    --border-color: #CCCCCC5C;
+    --border-radius: 5px;
+    --border: 1px solid var(--border-color);
+
+    --d-box-shadow: 0px 2px 2px 0px #000000;
+    --db-box-shadow: 0px 3px 3px 0px #000000;
+    --l-box-shadow: -1px 4px 5px 0 #d3d3d329;
+    --lb-box-shadow: 0px 3px 3px 0px #FFFFFF;
+
+    --accent: #3A8AFB;
+    --darker-accent: #0041F5;
+
+    --h-body-padding: 30px;
+    --v-body-padding: 30px;
+
+    --input-padding: 7px;
+    --input-border-radius: 5px;
+    --input-border: 1px solid #DEDEDE5C;
+    --input-l-border-radius: var(--input-border-radius) 0px 0px var(--input-border-radius);
+    --input-r-border-radius: 0px var(--input-border-radius) var(--input-border-radius) 0px;
+    --input-color: #8D8D8D;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--lite-bg);
+    position: absolute;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+h5 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+*:not(h1):not(h2):not(h3):not(h5) {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+img {
+    width: auto;
+}

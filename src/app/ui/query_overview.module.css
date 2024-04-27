@@ -1,0 +1,12 @@
+.container {
+    background-color: var(--dark-bg);
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: min-content auto;
+    min-width: 100vw;
+}
+
+.segmentContainer {
+    display: grid;
+    grid-template-columns: repeat(6, min-content);
+}
