@@ -24,6 +24,20 @@ The trends are computed from the data in the DB. You can see the trends in the p
 **Overview**
 ![image](https://github.com/LysandraBW/FilmBuffer/assets/81883243/2e2b9d61-fd28-42fd-93cb-3ef58a4d472e)
 
+**Videos**
+
+
+https://github.com/LysandraBW/FilmBuffer/assets/81883243/8844c476-ffed-4d7c-9ad9-39b69c1db3cc
+
+
+
+https://github.com/LysandraBW/FilmBuffer/assets/81883243/ffda48ad-1866-4224-a7b4-c77b777e6cc2
+
+
+https://github.com/LysandraBW/FilmBuffer/assets/81883243/08eb51f1-2a26-4ea1-a6b6-36ecb28fd6a1
+
+
+
 **Summary**
 
 I did not take as many pictures as I should have, but the full functionality was there! Even if only for a mere second. This was my first time using NextJS, and I had an awesome time. I'd definitely use it again.
